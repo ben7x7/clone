@@ -5,6 +5,30 @@
   height: 10vh;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.logo span  {
+  font-family: 'Bebas Neue', cursive;
+  margin: none;
+  font-size: 24px;
+  color: $cream;
+}
+
+li.nav-item {
+  font-family: 'Bebas Neue', cursive;
+  margin: none;
+  font-size: 24px;
+  color: $cream;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -18,15 +42,14 @@
 }
 
 .nav-links a {
-  color: $light-gray;
+  color: $cream;
   text-decoration: none;
   letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .nav-links a:hover {
-  color: $flash-blue;
+  color: $orange;
 }
 
 .burger {

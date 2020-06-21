@@ -1,3 +1,133 @@
-<section class="home">
-  Welcome to GAMEJS
+<section class="section section-one" id="one">
+  <div class="home text-center">
+    <h1>les services de benoit</h1>
+    <div class="home-img">
+      <%= image_tag('bell-orange.png') %>
+    </div>
+    <p>Prestations à domicile sur mesure</p>
+  </div>
+  <div class="logos">
+    <%= image_tag ('sap-change.png'), height: 80 %>
+    <div class="info">
+      <div class="phone">
+        <i class="fas fa-phone"></i>
+        <span>07.80.09.26.54</span>
+      </div>
+      <div class="mail">
+        <i class="far fa-envelope"></i>
+        <span>contact@servicesdebenoit.com</span>
+      </div>
+    </div>
+    <%= image_tag ('paysdegex.png'), class: 'pays' %>
+  </div>
+</section>
+
+<section class="section section-two" id="two">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="title-section text-center">
+        <h2>BENOIT à votre service !</h2>
+        <p>Vous n'avez pas le temps, l'envie, la patience pour certaines tâches de la vie quotidienne. Benoît s'en charge pour vous.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 ">
+      <div class="card text-center">
+        <%= image_tag ('icone-1.png'), height: 120, width: 120 %>
+        <h4>Assistance Administrative</h4>
+        <p>Traitement et rangement des divers documents administratifs.</p>
+        <%= link_to "en savoir plus", "#" %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <%= image_tag ('icone-2.png'), height: 120, width: 120 %>
+        <h4>Assistance Informatique</h4>
+        <p>Ordinateurs, tablettes et smarphones <br> Mac / PC / IOS / Androïd</p>
+        <%= link_to "en savoir plus", "#" %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <%= image_tag ('icone-3.png'), height: 120, width: 120 %>
+        <h4>Autres Services Proposés</h4>
+        <p>Les services de la vie quotidienne à la carte: Bricolage, livraison des courses, ...</p>
+        <%= link_to "en savoir plus", "#" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-three" id="three">
+  <div class="wrapper">
+    <div class="covid text-center">
+      <h2>special covid-19</h2>
+      <p>Des mesures de protection ont été mises en place permettant des prestations à domicile dans le respect des règles d'hygiène préconisées par l'Etat et notamment des gestes barrières.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-four" id="four">
+  <div class="wrapper">
+
+    <div class="logos-sap">
+      <%= image_tag ('sap.png'), height: 200 %>
+      <%= image_tag ('reduction.png'), height: 150 %>
+    </div>
+    <div class="title-section">
+      <h2>remise de 50%</h2>
+      <p>Les prestations de services d'aide à domicile vous permettent de bénéficier d'un avantage fiscal équivalent à 50% de vos dépenses, dans la limite des plafonds autorisés.</p>
+      <p>En janvier 2020, vous recevrez une attestation fiscale reprenant la nature des prestations fournies, les modalités de paiement, la durée totale des interventions et les sommes réglées pour l'année précédente. <br>
+      Cette attestation et les factures reçues seront à conserver comme justificatif pour votre déclaration de revenus 2019.</p>
+      <div class="separator">
+        <%= image_tag ('separateur.png') %>
+      </div>
+      <h2>tarifs</h2>
+      <p>
+        Les tarifs varient selon la prestation de service demandée ainsi que de la fréquence d'intervention.<br>
+        <strong>Un devis gratuit</strong> personnalisé vous sera remis pour toute prestation ou ensemble de prestations dont le prix total est supérieur ou égal à 100 € ou sur demande si le prix est inférieur.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-five" id="five">
+  <div class="title-section text-center">
+    <h2>à propos de</h2>
+  </div>
+  <div class="avatar text-center">
+    <%= image_tag ('avatar-bg.png'), height: 120 %>
+    <span>Benoit</span>
+  </div>
+  <div class="profile">
+    <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle internationale à la réception d'hôtels, dans les services aux expatriés et l'informatique.</p>
+  </div>
+</section>
+
+<section class="section section-six" id="six">
+  <div class="title-section contact">
+    <h2>contactez-moi</h2>
+  </div>
+  <div class="form">
+      <div class="input-form">
+        <label for="name" class="label-name">Name:</label>
+        <input type="text" name="name" autocomplete="off" required />
+      </div>
+
+      <div class="input-form">
+        <label for="email" class="label-name">Email:</label>
+        <input type="email" name="email" autocomplete="off" required />
+      </div>
+
+      <div class="input-form" id="textarea">
+        <label for="message" class="label-name">Message:</label>
+        <textarea row="3" id="message" name="message" required ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-submit">
+        <i class="far fa-paper-plane"></i>
+          Send
+      </button>
+    </div>
 </section>
