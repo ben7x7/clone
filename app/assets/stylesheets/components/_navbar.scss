@@ -102,11 +102,11 @@ li.nav-item {
 }
 
 @keyframes navLinkFade {
-  from {
+  0% {
     opacity: 0;
     transform: translateX(50px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateX(0px);
   }
